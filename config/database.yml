@@ -32,7 +32,8 @@ development:
   #username: hello_rails_back_end_2
 
   # The password associated with the postgres role (username).
-  #password:
+  username: postgres
+  password: 1234
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -58,7 +59,8 @@ development:
 test:
   <<: *default
   database: hello_rails_back_end_2_test
-
+  username: postgres
+  password: 1234
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
